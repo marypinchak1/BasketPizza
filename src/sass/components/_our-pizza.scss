@@ -1,10 +1,13 @@
 .our__pizza {
-   h1 {
-      font-family: $var6;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 59px;
-      text-align: center;
-      color: #000000;
+   .pizza__title {
+      margin: 32px 0;
+      h2 {
+         font-family: $var6;
+         font-weight: 700;
+         font-size: 48px;
+         line-height: 59px;
+         text-align: center;
+         color: #000000;
+      }
    }
 }
