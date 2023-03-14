@@ -1,6 +1,7 @@
 @import "reset_style.scss";
 @import "base/func";
 @import "fonts/font";
+@import "base/variables";
 
 @import "../css/bootstrap.min.css";
 //@import "libs/slick-theme.scss";
@@ -8,6 +9,7 @@
 
 @import "components/top-menu";
 @import "components/header";
+
 @import "components/our-pizza";
 
 @import "components/footer";
