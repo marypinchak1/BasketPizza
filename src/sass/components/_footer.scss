@@ -1,0 +1,130 @@
+.footer {
+    background-color: #101010;
+    padding-top: 100px;
+
+    &__logo{
+        img{
+            max-width: 128px;
+            max-height: 82px;
+            width: 100%;
+        }
+        @media screen  and (max-width: 991px){
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+        }
+    }
+
+    &__choose {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            text-align: center;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            font-size: 24px;
+            color: #BA0000;
+            text-transform: uppercase;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                padding-top: 22px;
+
+                a {
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: #FFFEFE;
+                }
+            }
+        }
+
+    }
+
+    &__contact {
+        @media screen and (max-width: 575px) {
+            padding-top: 50px;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 26px;
+
+        h2 {
+            text-align: center;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            font-size: 24px;
+            color: #BA0000;
+            text-transform: uppercase;
+            padding-bottom: 22px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #FFFEFE;
+        }
+    }
+    &__workTime{
+        h2{
+        text-align: center;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: 24px;
+        color: #BA0000;
+        text-transform: uppercase;
+        }
+        p{
+            text-decoration: none;
+            font-size: 20px;
+            color: #FFFEFE;
+            text-align: center;
+        }
+    }
+
+    &__subscribe {
+        @media screen and (max-width: 767px) {
+            padding-top: 50px;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            text-align: center;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            font-size: 24px;
+            color: #BA0000;
+            text-transform: uppercase;
+            padding-bottom: 22px;
+        }
+
+        .subscribe__link {
+            display: flex;
+            gap: 16px;
+        }
+    }
+
+    &__copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-top: 60px;
+        padding-bottom: 25px;
+
+        p {
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+    }
+}
