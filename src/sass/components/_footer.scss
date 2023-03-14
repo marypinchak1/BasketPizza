@@ -22,10 +22,10 @@
 
         h2 {
             text-align: center;
-            font-family: 'Font Awesome 5 Free';
+            font-family: $var5;
             font-weight: 900;
             font-size: 24px;
-            color: #BA0000;
+            color: $var2;
             text-transform: uppercase;
         }
 
@@ -38,7 +38,7 @@
                 a {
                     text-decoration: none;
                     font-size: 20px;
-                    color: #FFFEFE;
+                    color: $var1;
                 }
             }
         }
@@ -56,10 +56,10 @@
 
         h2 {
             text-align: center;
-            font-family: 'Font Awesome 5 Free';
+            font-family: $var5;
             font-weight: 900;
             font-size: 24px;
-            color: #BA0000;
+            color: $var2;
             text-transform: uppercase;
             padding-bottom: 22px;
         }
@@ -67,22 +67,23 @@
         a {
             text-decoration: none;
             font-size: 20px;
-            color: #FFFEFE;
+            color: $var1;
         }
     }
     &__workTime{
         h2{
         text-align: center;
-        font-family: 'Font Awesome 5 Free';
+        font-family: $var5;
         font-weight: 900;
         font-size: 24px;
-        color: #BA0000;
+        color: $var2;
         text-transform: uppercase;
         }
         p{
+            font-family: $var5;
             text-decoration: none;
             font-size: 20px;
-            color: #FFFEFE;
+            color: $var1;
             text-align: center;
         }
     }
@@ -97,10 +98,10 @@
 
         h2 {
             text-align: center;
-            font-family: 'Font Awesome 5 Free';
+            font-family: $var5;
             font-weight: 900;
             font-size: 24px;
-            color: #BA0000;
+            color: $var2;
             text-transform: uppercase;
             padding-bottom: 22px;
         }
@@ -121,10 +122,9 @@
         padding-bottom: 25px;
 
         p {
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
+            font-family: $var5;
             font-size: 16px;
-            color: #FFFFFF;
+            color: $var1;
         }
     }
 }
