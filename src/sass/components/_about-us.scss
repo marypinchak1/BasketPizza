@@ -1,0 +1,27 @@
+.about-us{
+    &__content{
+        max-width: 320px;
+        width: 100%;
+        // overflow: hidden;
+        &_title{
+            padding-bottom: 24px;
+            text-align: center;
+            h2{
+                font-family: $var6;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 1;
+                text-transform: uppercase;
+                color: $var2;
+            }
+        }
+        &_descript{
+            p{
+                font-family: $var5;
+                font-size: 20px;
+                line-height: 1;
+                text-align: center;
+            }
+        }
+    }
+}
