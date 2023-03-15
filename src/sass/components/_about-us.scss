@@ -1,8 +1,8 @@
 .about-us {
+    padding-bottom: 76px;
     &__content {
         max-width: 320px;
         width: 100%;
-        // overflow: hidden;
         &_title {
             padding-bottom: 24px;
             text-align: center;
@@ -41,5 +41,48 @@
     .swiper-slide img {
         display: block;
         width: 100%;
+    }
+
+    .swiper-pagination-bullet {
+        height: 12px;
+        width: 12px;
+        background: #000;
+        margin: 4px 0;
+    }
+
+    .swiper-pagination-bullet-active {
+        height: 16px;
+        width: 16px;
+        background: $var2;
+    }
+
+    .swiper-button-prev {
+        left: var(--swiper-navigation-sides-offset, 32%);
+        top: var(--swiper-navigation-sides-offset, 96%);
+        right: auto;
+        @media screen and (max-width: 767px) {
+            left: var(--swiper-navigation-sides-offset, 28%);
+        }
+        @media screen and (max-width: 575px) {
+            left: var(--swiper-navigation-sides-offset, 22%);
+        }
+        &::after {
+            display: none;
+        }
+    }
+
+    .swiper-button-next {
+        right: var(--swiper-navigation-sides-offset, 32%);
+        top: var(--swiper-navigation-sides-offset, 96%);
+        left: auto;
+        @media screen and (max-width: 767px) {
+            right: var(--swiper-navigation-sides-offset, 28%);
+        }
+        @media screen and (max-width: 575px) {
+            right: var(--swiper-navigation-sides-offset, 22%);
+        }
+        &::after {
+            display: none;
+        }
     }
 }

@@ -29,6 +29,7 @@ let swiper = new Swiper(".mySwiper", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
+  loop: true,
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
@@ -36,7 +37,12 @@ let swiper = new Swiper(".mySwiper", {
     modifier: 1,
     slideShadows: true,
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
 });
