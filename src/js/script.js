@@ -23,7 +23,7 @@ $('.burger__menu a').on('click', function () {
 })
 // ============================================= //
 
-
+// swiper //
 let swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
@@ -45,4 +45,39 @@ let swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+});
+// ============================================= //
+
+
+window.addEventListener('click', function (event) {
+
+  //Змінна для рахунку
+  let counter;
+
+  // Провіряємо клік по кнопках пдюс і мінус
+  if (event.target.dataset.action === 'plus' || event.target.dataset.action === 'minus') {
+
+    const counterPizza = event.target.closest('.pizza__counter');
+
+    counter = counterPizza.querySelector('[data-counter]');
+  }
+
+
+  // Відслідковуємо кнопку на плюс
+  if (event.target.dataset.action === 'plus') {
+
+    counter.innerText = ++counter.innerText;
+
+  }
+
+  // Відслідковуємо кнопку на мінус
+  if (event.target.dataset.action === 'minus') {
+
+    if (parseInt(counter.innerText) > 1) {
+      // Зменшуємо на 1
+      counter.innerText = --counter.innerText;
+    }
+  }
+
+
 });

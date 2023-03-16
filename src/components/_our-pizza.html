@@ -4,7 +4,7 @@
    </div>
 
    <div class="container">
-      <div class="row d-flex">
+      <div class="row">
          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="pizza__card">
                <div class="pizza__items">
@@ -30,11 +30,11 @@
                </div>
                <div class="pizza__buy">
                   <div class="pizza__counter">
-                     <div class="items__control">-</div>
-                     <div class="items__current">1</div>
-                     <div class="items__control">+</div>
+                     <div class="items__control" data-action="minus">-</div>
+                     <div class="items__current" data-counter>1</div>
+                     <div class="items__control" data-action="plus">+</div>
                   </div>
-                  <button class="buy__btn">
+                  <button data-cart type="button" class="buy__btn">
                      в корзину
                   </button>
                   <div class="pizza__price">
@@ -47,7 +47,7 @@
          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="pizza__card">
                <div class="pizza__items">
-                  <img src="./img/our-pizza/himars.png" alt="pizza">
+                  <img src="./img/our-pizza/peach.png" alt="pizza">
                   <div class="info__top">
                      <div class="pizza__info">
                         <p class="pizza__weight">530 г</p>
@@ -58,10 +58,10 @@
                      </button>
                   </div>
                   <div class="card__title">
-                     <h3>Хаймарс</h3>
+                     <h3>Персикова</h3>
                   </div>
                   <div class="items__hover">
-                     <h3 class="title__hover">Хаймарс</h3>
+                     <h3 class="title__hover">Персикова</h3>
                      <p class="describe__hover">Перетерті томати, моцарела, пікантні баклажани, мариновані за домашнім
                         італійським рецептом, пікантна салямі пепероні та пармезан. Алергени: злаки, лактоза.
                      </p>
@@ -69,11 +69,128 @@
                </div>
                <div class="pizza__buy">
                   <div class="pizza__counter">
-                     <div class="items__control">-</div>
-                     <div class="items__current">1</div>
-                     <div class="items__control">+</div>
+                     <div class="items__control" data-action="minus">-</div>
+                     <div class="items__current" data-counter>1</div>
+                     <div class="items__control" data-action="plus">+</div>
                   </div>
-                  <button class="buy__btn">
+                  <button data-cart type="button" class="buy__btn">
+                     в корзину
+                  </button>
+                  <div class="pizza__price">
+                     <p>175 грн</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="pizza__card">
+               <div class="pizza__items">
+                  <img src="./img/our-pizza/stefania.png" alt="pizza">
+                  <div class="info__top">
+                     <div class="pizza__info">
+                        <p class="pizza__weight">530 г</p>
+                        <p class="pizza__size">30 см</p>
+                     </div>
+                     <button class="pizza__favourite">
+                        <img src="./img/our-pizza/red-favourite.svg" alt="like">
+                     </button>
+                  </div>
+                  <div class="card__title">
+                     <h3>Стефанія</h3>
+                  </div>
+                  <div class="items__hover">
+                     <h3 class="title__hover">Стефанія</h3>
+                     <p class="describe__hover">Перетерті томати, моцарела, пікантні баклажани, мариновані за домашнім
+                        італійським рецептом, пікантна салямі пепероні та пармезан. Алергени: злаки, лактоза.
+                     </p>
+                  </div>
+               </div>
+               <div class="pizza__buy">
+                  <div class="pizza__counter">
+                     <div class="items__control" data-action="minus">-</div>
+                     <div class="items__current" data-counter>1</div>
+                     <div class="items__control" data-action="plus">+</div>
+                  </div>
+                  <button data-cart type="button" class="buy__btn">
+                     в корзину
+                  </button>
+                  <div class="pizza__price">
+                     <p>125 грн</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="pizza__card">
+               <div class="pizza__items">
+                  <img src="./img/our-pizza/margarita.png" alt="pizza">
+                  <div class="info__top">
+                     <div class="pizza__info">
+                        <p class="pizza__weight">530 г</p>
+                        <p class="pizza__size">30 см</p>
+                     </div>
+                     <button class="pizza__favourite">
+                        <img src="./img/our-pizza/red-favourite.svg" alt="like">
+                     </button>
+                  </div>
+                  <div class="card__title">
+                     <h3>Маргарита</h3>
+                  </div>
+                  <div class="items__hover">
+                     <h3 class="title__hover">Маргарита</h3>
+                     <p class="describe__hover">Перетерті томати, моцарела, пікантні баклажани, мариновані за домашнім
+                        італійським рецептом, пікантна салямі пепероні та пармезан. Алергени: злаки, лактоза.
+                     </p>
+                  </div>
+               </div>
+               <div class="pizza__buy">
+                  <div class="pizza__counter">
+                     <div class="items__control" data-action="minus">-</div>
+                     <div class="items__current" data-counter>1</div>
+                     <div class="items__control" data-action="plus">+</div>
+                  </div>
+                  <button data-cart type="button" class="buy__btn">
+                     в корзину
+                  </button>
+                  <div class="pizza__price">
+                     <p>235 грн</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="pizza__card">
+               <div class="pizza__items">
+                  <img src="./img/our-pizza/mexicana.png" alt="pizza">
+                  <div class="info__top">
+                     <div class="pizza__info">
+                        <p class="pizza__weight">530 г</p>
+                        <p class="pizza__size">30 см</p>
+                     </div>
+                     <button class="pizza__favourite">
+                        <img src="./img/our-pizza/red-favourite.svg" alt="like">
+                     </button>
+                  </div>
+                  <div class="card__title">
+                     <h3>Мексиканська</h3>
+                  </div>
+                  <div class="items__hover">
+                     <h3 class="title__hover">Мексиканська</h3>
+                     <p class="describe__hover">Перетерті томати, моцарела, пікантні баклажани, мариновані за домашнім
+                        італійським рецептом, пікантна салямі пепероні та пармезан. Алергени: злаки, лактоза.
+                     </p>
+                  </div>
+               </div>
+               <div class="pizza__buy">
+                  <div class="pizza__counter">
+                     <div class="items__control" data-action="minus">-</div>
+                     <div class="items__current" data-counter>1</div>
+                     <div class="items__control" data-action="plus">+</div>
+                  </div>
+                  <button data-cart type="button" class="buy__btn">
                      в корзину
                   </button>
                   <div class="pizza__price">
@@ -86,7 +203,7 @@
          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="pizza__card">
                <div class="pizza__items">
-                  <img src="./img/our-pizza/himars.png" alt="pizza">
+                  <img src="./img/our-pizza/spinach.png" alt="pizza">
                   <div class="info__top">
                      <div class="pizza__info">
                         <p class="pizza__weight">530 г</p>
@@ -97,10 +214,10 @@
                      </button>
                   </div>
                   <div class="card__title">
-                     <h3>Хаймарс</h3>
+                     <h3>Шпинатна</h3>
                   </div>
                   <div class="items__hover">
-                     <h3 class="title__hover">Хаймарс</h3>
+                     <h3 class="title__hover">Шпинатна</h3>
                      <p class="describe__hover">Перетерті томати, моцарела, пікантні баклажани, мариновані за домашнім
                         італійським рецептом, пікантна салямі пепероні та пармезан. Алергени: злаки, лактоза.
                      </p>
@@ -108,15 +225,15 @@
                </div>
                <div class="pizza__buy">
                   <div class="pizza__counter">
-                     <div class="items__control">-</div>
-                     <div class="items__current">1</div>
-                     <div class="items__control">+</div>
+                     <div class="items__control" data-action="minus">-</div>
+                     <div class="items__current" data-counter>1</div>
+                     <div class="items__control" data-action="plus">+</div>
                   </div>
-                  <button class="buy__btn">
+                  <button data-cart type="button" class="buy__btn">
                      в корзину
                   </button>
                   <div class="pizza__price">
-                     <p>225 грн</p>
+                     <p>180 грн</p>
                   </div>
                </div>
             </div>
@@ -125,7 +242,7 @@
          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="pizza__card">
                <div class="pizza__items">
-                  <img src="./img/our-pizza/himars.png" alt="pizza">
+                  <img src="./img/our-pizza/hawai.png" alt="pizza">
                   <div class="info__top">
                      <div class="pizza__info">
                         <p class="pizza__weight">530 г</p>
@@ -136,10 +253,10 @@
                      </button>
                   </div>
                   <div class="card__title">
-                     <h3>Хаймарс</h3>
+                     <h3>Гаваї</h3>
                   </div>
                   <div class="items__hover">
-                     <h3 class="title__hover">Хаймарс</h3>
+                     <h3 class="title__hover">Гаваї</h3>
                      <p class="describe__hover">Перетерті томати, моцарела, пікантні баклажани, мариновані за домашнім
                         італійським рецептом, пікантна салямі пепероні та пармезан. Алергени: злаки, лактоза.
                      </p>
@@ -147,15 +264,15 @@
                </div>
                <div class="pizza__buy">
                   <div class="pizza__counter">
-                     <div class="items__control">-</div>
-                     <div class="items__current">1</div>
-                     <div class="items__control">+</div>
+                     <div class="items__control" data-action="minus">-</div>
+                     <div class="items__current" data-counter>1</div>
+                     <div class="items__control" data-action="plus">+</div>
                   </div>
-                  <button class="buy__btn">
+                  <button data-cart type="button" class="buy__btn">
                      в корзину
                   </button>
                   <div class="pizza__price">
-                     <p>225 грн</p>
+                     <p>140 грн</p>
                   </div>
                </div>
             </div>
@@ -164,7 +281,7 @@
          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="pizza__card">
                <div class="pizza__items">
-                  <img src="./img/our-pizza/himars.png" alt="pizza">
+                  <img src="./img/our-pizza/javelina.png" alt="pizza">
                   <div class="info__top">
                      <div class="pizza__info">
                         <p class="pizza__weight">530 г</p>
@@ -175,10 +292,10 @@
                      </button>
                   </div>
                   <div class="card__title">
-                     <h3>Хаймарс</h3>
+                     <h3>Джавеліна</h3>
                   </div>
                   <div class="items__hover">
-                     <h3 class="title__hover">Хаймарс</h3>
+                     <h3 class="title__hover">Джавеліна</h3>
                      <p class="describe__hover">Перетерті томати, моцарела, пікантні баклажани, мариновані за домашнім
                         італійським рецептом, пікантна салямі пепероні та пармезан. Алергени: злаки, лактоза.
                      </p>
@@ -186,15 +303,15 @@
                </div>
                <div class="pizza__buy">
                   <div class="pizza__counter">
-                     <div class="items__control">-</div>
-                     <div class="items__current">1</div>
-                     <div class="items__control">+</div>
+                     <div class="items__control" data-action="minus">-</div>
+                     <div class="items__current" data-counter>1</div>
+                     <div class="items__control" data-action="plus">+</div>
                   </div>
-                  <button class="buy__btn">
+                  <button data-cart type="button" class="buy__btn">
                      в корзину
                   </button>
                   <div class="pizza__price">
-                     <p>225 грн</p>
+                     <p>265 грн</p>
                   </div>
                </div>
             </div>
@@ -203,7 +320,7 @@
          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="pizza__card">
                <div class="pizza__items">
-                  <img src="./img/our-pizza/himars.png" alt="pizza">
+                  <img src="./img/our-pizza/bayraktar.png" alt="pizza">
                   <div class="info__top">
                      <div class="pizza__info">
                         <p class="pizza__weight">530 г</p>
@@ -214,10 +331,10 @@
                      </button>
                   </div>
                   <div class="card__title">
-                     <h3>Хаймарс</h3>
+                     <h3>Байрактар</h3>
                   </div>
                   <div class="items__hover">
-                     <h3 class="title__hover">Хаймарс</h3>
+                     <h3 class="title__hover">Байрактар</h3>
                      <p class="describe__hover">Перетерті томати, моцарела, пікантні баклажани, мариновані за домашнім
                         італійським рецептом, пікантна салямі пепероні та пармезан. Алергени: злаки, лактоза.
                      </p>
@@ -225,128 +342,11 @@
                </div>
                <div class="pizza__buy">
                   <div class="pizza__counter">
-                     <div class="items__control">-</div>
-                     <div class="items__current">1</div>
-                     <div class="items__control">+</div>
+                     <div class="items__control" data-action="minus">-</div>
+                     <div class="items__current" data-counter>1</div>
+                     <div class="items__control" data-action="plus">+</div>
                   </div>
-                  <button class="buy__btn">
-                     в корзину
-                  </button>
-                  <div class="pizza__price">
-                     <p>225 грн</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="pizza__card">
-               <div class="pizza__items">
-                  <img src="./img/our-pizza/himars.png" alt="pizza">
-                  <div class="info__top">
-                     <div class="pizza__info">
-                        <p class="pizza__weight">530 г</p>
-                        <p class="pizza__size">30 см</p>
-                     </div>
-                     <button class="pizza__favourite">
-                        <img src="./img/our-pizza/red-favourite.svg" alt="like">
-                     </button>
-                  </div>
-                  <div class="card__title">
-                     <h3>Хаймарс</h3>
-                  </div>
-                  <div class="items__hover">
-                     <h3 class="title__hover">Хаймарс</h3>
-                     <p class="describe__hover">Перетерті томати, моцарела, пікантні баклажани, мариновані за домашнім
-                        італійським рецептом, пікантна салямі пепероні та пармезан. Алергени: злаки, лактоза.
-                     </p>
-                  </div>
-               </div>
-               <div class="pizza__buy">
-                  <div class="pizza__counter">
-                     <div class="items__control">-</div>
-                     <div class="items__current">1</div>
-                     <div class="items__control">+</div>
-                  </div>
-                  <button class="buy__btn">
-                     в корзину
-                  </button>
-                  <div class="pizza__price">
-                     <p>225 грн</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="pizza__card">
-               <div class="pizza__items">
-                  <img src="./img/our-pizza/himars.png" alt="pizza">
-                  <div class="info__top">
-                     <div class="pizza__info">
-                        <p class="pizza__weight">530 г</p>
-                        <p class="pizza__size">30 см</p>
-                     </div>
-                     <button class="pizza__favourite">
-                        <img src="./img/our-pizza/red-favourite.svg" alt="like">
-                     </button>
-                  </div>
-                  <div class="card__title">
-                     <h3>Хаймарс</h3>
-                  </div>
-                  <div class="items__hover">
-                     <h3 class="title__hover">Хаймарс</h3>
-                     <p class="describe__hover">Перетерті томати, моцарела, пікантні баклажани, мариновані за домашнім
-                        італійським рецептом, пікантна салямі пепероні та пармезан. Алергени: злаки, лактоза.
-                     </p>
-                  </div>
-               </div>
-               <div class="pizza__buy">
-                  <div class="pizza__counter">
-                     <div class="items__control">-</div>
-                     <div class="items__current">1</div>
-                     <div class="items__control">+</div>
-                  </div>
-                  <button class="buy__btn">
-                     в корзину
-                  </button>
-                  <div class="pizza__price">
-                     <p>225 грн</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="pizza__card">
-               <div class="pizza__items">
-                  <img src="./img/our-pizza/himars.png" alt="pizza">
-                  <div class="info__top">
-                     <div class="pizza__info">
-                        <p class="pizza__weight">530 г</p>
-                        <p class="pizza__size">30 см</p>
-                     </div>
-                     <button class="pizza__favourite">
-                        <img src="./img/our-pizza/red-favourite.svg" alt="like">
-                     </button>
-                  </div>
-                  <div class="card__title">
-                     <h3>Хаймарс</h3>
-                  </div>
-                  <div class="items__hover">
-                     <h3 class="title__hover">Хаймарс</h3>
-                     <p class="describe__hover">Перетерті томати, моцарела, пікантні баклажани, мариновані за домашнім
-                        італійським рецептом, пікантна салямі пепероні та пармезан. Алергени: злаки, лактоза.
-                     </p>
-                  </div>
-               </div>
-               <div class="pizza__buy">
-                  <div class="pizza__counter">
-                     <div class="items__control">-</div>
-                     <div class="items__current">1</div>
-                     <div class="items__control">+</div>
-                  </div>
-                  <button class="buy__btn">
+                  <button data-cart type="button" class="buy__btn">
                      в корзину
                   </button>
                   <div class="pizza__price">
