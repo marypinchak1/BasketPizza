@@ -47,8 +47,36 @@ let swiper = new Swiper(".mySwiper", {
   },
 });
 // ============================================= //
+// Favourite Modal
+let modal = document.getElementById("favModal");
+let btn = document.getElementById("favOpen");
+let closeBtn = document.getElementsByClassName("close__favourite")[0];
 
+btn.onclick = function () {
+  modal.style.display = "block";
+  // btn.style.display = "none";
+}
 
+closeBtn.onclick = function () {
+  modal.style.display = "none";
+  // btn.style.display = "block";
+}
+// ============================================= //
+// Cart Modal
+let modalCart = document.getElementById("cartModal");
+let btnCart = document.getElementById("cartOpen");
+let closeCart = document.getElementsByClassName("close__cart")[0];
+
+btnCart.onclick = function () {
+  modalCart.style.display = "block";
+  // btnCart.style.display = "none";
+}
+
+closeCart.onclick = function () {
+  modalCart.style.display = "none";
+  // btnCart.style.display = "block";
+}
+// ============================================= //
 window.addEventListener('click', function (event) {
 
   //Змінна для рахунку
@@ -78,6 +106,5 @@ window.addEventListener('click', function (event) {
       counter.innerText = --counter.innerText;
     }
   }
-
 
 });
