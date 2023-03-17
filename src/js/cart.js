@@ -18,3 +18,20 @@ window.addEventListener('click', function (event) {
 
    }
 });
+
+
+
+
+
+
+
+
+
+// Form JS Code //
+// Validation Form-Phone //
+let element = document.getElementById('phone');
+let maskOptions = {
+   mask: '+38 (000) 00-00-000',
+   lazy: false,
+};
+let mask = IMask(element, maskOptions);
