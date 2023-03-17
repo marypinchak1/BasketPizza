@@ -74,12 +74,37 @@
 
             <div class="col-4 col-sm-5 col-md-4 col-lg-2">
                <div class="menu__right">
-                  <button class="menu__favourite">
+
+                  <div id="favModal" class="modal">
+                     <div class="modal-content">
+                        <h2>Улюблені</h2>
+
+                        <button class="close__favourite">
+                           Close
+
+                        </button>
+                     </div>
+                  </div>
+
+                  <button id="favOpen" class="menu__favourite">
                      <img src="./img/top-menu/heart-icon.svg" alt="favourite">
                      <div class="favourite__amount">0</div>
                   </button>
+
                   <div class="menu__border"></div>
-                  <button class="menu__basket">
+
+                  <div id="cartModal" class="modal">
+                     <div class="modal-content">
+                        <h2>Улюблені</h2>
+
+                        <button class="close__cart">
+                           Close
+                           
+                        </button>
+                     </div>
+                  </div>
+
+                  <button id="cartOpen" class="menu__basket">
                      <img src="./img/top-menu/basket-icon.svg" alt="basket">
                      <div class="basket__amount">0</div>
                   </button>
