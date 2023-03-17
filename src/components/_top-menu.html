@@ -143,19 +143,11 @@
 
                            </div>
 
-                           <div class="total__order">
-                              <p>
-                                 <span class="total__title">Разом:</span>
-                                 <span class="total__price">175 грн</span>
-                              </p>
-                           </div>
-
                            <form>
 
                               <fieldset class="form__name">
                                  <label class="name__label" for="fname">Ім'я</label><br>
-                                 <input type="text" id="fname" name="fname" autocomplete="off" placeholder="Ваше ім'я"
-                                    required>
+                                 <input type="text" id="fname" name="fname" autocomplete="off" placeholder="Ваше ім'я">
                               </fieldset>
 
                               <fieldset class="form__tel">
@@ -195,12 +187,29 @@
                               <fieldset class="address">
                                  <h3 class="address__title">Адреса</h3>
                                  <input type="text" id="address" autocomplete="off"
-                                    placeholder="Назва вулиці та номер будинку" required>
+                                    placeholder="Назва вулиці та номер будинку">
                               </fieldset>
 
                               <fieldset class="comment">
                                  <h3 class="comment__title">Ваш коментар</h3>
                                  <textarea name="comment" id="textComment" cols="100%" rows="10"></textarea>
+                              </fieldset>
+
+                              <div class="total__order">
+                                 <p data-cart-delivery class="none">
+                                    <span class="total__title">Доставка:</span>
+                                    <span class="total__delivery">50 грн</span><br>
+                                 </p>
+                                 <p>
+                                    <span class="total__title">До сплати:</span>
+                                    <span class="total__price">175 грн</span>
+                                 </p>
+                              </div>
+
+                              <fieldset class="order__submit">
+                                 <button type="submit">
+                                    Замовити
+                                 </button>
                               </fieldset>
 
                            </form>

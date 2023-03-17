@@ -457,26 +457,6 @@
                   }
                }
 
-               .total__order {
-                  p {
-                     text-align: right;
-                     .total__title {
-                        font-family: $var5;
-                        font-weight: 600;
-                        font-size: 30px;
-                        line-height: 35px;
-                        color: $var3;
-                     }
-
-                     .total__price {
-                        font-family: $var5;
-                        font-weight: 600;
-                        font-size: 30px;
-                        line-height: 35px;
-                        color: $var3;
-                     }
-                  }
-               }
                form {
                   .form__name {
                      padding-bottom: 34px;
@@ -680,6 +660,7 @@
                   }
 
                   .comment {
+                     margin-bottom: 60px;
                      .comment__title {
                         font-family: $var5;
                         font-weight: 500;
@@ -690,6 +671,53 @@
                      textarea {
                         width: 100%;
                         padding: 20px;
+                     }
+                  }
+
+                  .total__order {
+                     margin-bottom: 40px;
+                     .none {
+                        .total__delivery {
+                           font-family: $var5;
+                           font-weight: 600;
+                           font-size: 30px;
+                           line-height: 35px;
+                           color: $var3;
+                        }
+                     }
+                     p {
+                        text-align: right;
+                        .total__title {
+                           font-family: $var5;
+                           font-weight: 600;
+                           font-size: 30px;
+                           line-height: 35px;
+                           color: $var3;
+                           text-transform: uppercase;
+                        }
+
+                        .total__price {
+                           font-family: $var5;
+                           font-weight: 600;
+                           font-size: 30px;
+                           line-height: 35px;
+                           color: $var3;
+                        }
+                     }
+                  }
+
+                  .order__submit {
+                     text-align: center;
+                     button {
+                        background-color: $var2;
+                        font-family: $var5;
+                        font-weight: 600;
+                        font-size: 36px;
+                        line-height: 21px;
+                        text-transform: uppercase;
+                        color: $var1;
+                        border: none;
+                        padding: 40px 80px;
                      }
                   }
                }
