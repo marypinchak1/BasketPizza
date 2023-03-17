@@ -288,6 +288,7 @@
             display: flex;
             flex-direction: column;
             max-width: 1215px;
+            height: 100%;
             pointer-events: auto;
             background-color: #fff;
             background-clip: padding-box;
@@ -303,6 +304,422 @@
                   font-size: 40px;
                   line-height: 47px;
                   color: $var3;
+               }
+               .pizza__body_cart {
+                  border-top: 3px solid rgba(0, 0, 0, 0.3);
+                  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+                  padding: 50px 72px;
+                  margin: 66px 0;
+                  .pizza__card {
+                     margin: 0 auto;
+                     max-width: 360px;
+                     width: 100%;
+                     max-height: 464px;
+                     height: 100%;
+                     background: #ffffff;
+                     box-shadow: 0px 25px 32px rgba(0, 0, 0, 0.17);
+                     .pizza__items {
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: 0 0;
+                        max-height: 360px;
+                        position: relative;
+                        z-index: 20;
+                        img {
+                           max-width: 360px;
+                           width: 100%;
+                        }
+                        &:hover {
+                           cursor: pointer;
+                           .items__hover {
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: center;
+                              padding: 0 20px;
+                              position: absolute;
+                              top: 0%;
+                              transform: translate(0%, 0%);
+                              background: rgba(217, 217, 217, 0.7);
+                              height: 100%;
+                              transition: 1.3s;
+                           }
+                           .card__title {
+                              display: none;
+                           }
+                        }
+                        .info__top {
+                           display: flex;
+                           justify-content: space-between;
+                           align-items: center;
+                           position: absolute;
+                           top: 5%;
+                           width: 100%;
+                           padding: 0 15px;
+                           z-index: 20;
+                           .pizza__info {
+                              .pizza__weight {
+                                 font-family: $var5;
+                                 font-weight: 300;
+                                 font-size: 16px;
+                                 line-height: 19px;
+                                 color: $var2;
+                              }
+                              .pizza__size {
+                                 font-family: $var5;
+                                 font-weight: 300;
+                                 font-size: 16px;
+                                 line-height: 19px;
+                                 color: $var4;
+                              }
+                           }
+                        }
+                        .card__title {
+                           display: flex;
+                           justify-content: center;
+                           position: absolute;
+                           bottom: 5%;
+                           transform: translate(0%, 0%);
+                           h3 {
+                              font-family: $var5;
+                              font-weight: 600;
+                              font-size: 20px;
+                              line-height: 23px;
+                              text-align: center;
+                              text-transform: uppercase;
+                              color: $var4;
+                              padding: 16px 24px;
+                              background: rgba(255, 255, 255, 0.9);
+                           }
+                        }
+                        .items__hover {
+                           display: none;
+                           .title__hover {
+                              font-family: $var5;
+                              font-weight: 800;
+                              font-size: 20px;
+                              line-height: 23px;
+                              text-transform: uppercase;
+                              text-align: center;
+                              color: rgba(0, 0, 0, 0.8);
+                              padding-bottom: 38px;
+                           }
+                           .describe__hover {
+                              font-family: $var5;
+                              font-weight: 500;
+                              font-size: 16px;
+                              line-height: 23px;
+                              text-transform: uppercase;
+                              text-align: center;
+                              color: rgba(0, 0, 0, 0.7);
+                           }
+                        }
+                     }
+                     .pizza__buy {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        padding: 30px 8px;
+                        .pizza__counter {
+                           display: flex;
+                           justify-content: space-between;
+                           align-items: center;
+                           max-width: 90px;
+                           width: 100%;
+                           .items__control {
+                              font-family: $var6;
+                              font-weight: 300;
+                              font-size: 24px;
+                              text-align: center;
+                              color: $var3;
+                              padding: 6px;
+                              border: 2px solid $var3;
+                              cursor: pointer;
+                           }
+                           .items__current {
+                              font-family: $var5;
+                              font-weight: 600;
+                              font-size: 16px;
+                              line-height: 19px;
+                              text-align: center;
+                              color: $var3;
+                           }
+                        }
+                        .pizza__price {
+                           p {
+                              font-family: $var5;
+                              font-weight: 600;
+                              font-size: 20px;
+                              line-height: 42px;
+                              color: $var3;
+                           }
+                        }
+                     }
+                  }
+               }
+
+               form {
+                  .form__name {
+                     padding-bottom: 34px;
+                     .name__label {
+                        font-family: $var5;
+                        font-weight: 500;
+                        font-size: 35px;
+                        color: $var3;
+                        margin-bottom: 20px;
+                     }
+                     input[type="text"] {
+                        width: 100%;
+                        height: 54px;
+                        border: 2px solid $var3;
+                        border-radius: 12px;
+                        padding-left: 30px;
+                        font-size: 21px;
+                        line-height: 27px;
+                        color: $var3;
+                        @media screen and (max-width: 480px) {
+                           font-size: 18px;
+                        }
+                     }
+                     input[type="text"]::placeholder {
+                        font-family: $var6;
+                        font-size: 21px;
+                        line-height: 27px;
+                        color: $var3;
+                        @media screen and (max-width: 480px) {
+                           font-size: 18px;
+                        }
+                     }
+                  }
+
+                  .form__tel {
+                     padding-bottom: 34px;
+                     .name__label {
+                        font-family: $var5;
+                        font-weight: 500;
+                        font-size: 35px;
+                        color: $var3;
+                        margin-bottom: 20px;
+                     }
+                     input[type="tel"] {
+                        width: 100%;
+                        height: 54px;
+                        border-radius: 12px;
+                        padding-left: 30px;
+                        font-size: 21px;
+                        line-height: 27px;
+                        color: $var3;
+                        &:focus-visible {
+                           outline: -webkit-focus-ring-color auto 0px;
+                        }
+                        @media screen and (max-width: 480px) {
+                           font-size: 18px;
+                        }
+                     }
+                     input[type="tel"]::placeholder {
+                        font-size: 21px;
+                        line-height: 27px;
+                        color: $var3;
+                        @media screen and (max-width: 480px) {
+                           font-size: 18px;
+                        }
+                     }
+
+                     input:invalid {
+                        color: $var3;
+                        border: 2px solid #8b0000;
+                     }
+
+                     input:valid {
+                        color: $var3;
+                        border: 2px solid #009000;
+                     }
+                  }
+                  .delivery {
+                     .delivery__title {
+                        font-family: $var5;
+                        font-weight: 500;
+                        font-size: 35px;
+                        color: $var3;
+                        margin-bottom: 20px;
+                     }
+
+                     .delivery__byself {
+                        margin-bottom: 25px;
+                        display: flex;
+                        align-items: center;
+                        .form-check-input {
+                           width: 25px;
+                           height: 25px;
+                           margin-right: 12px;
+                           &:checked {
+                              background-color: $var2;
+                              border-color: $var3;
+                           }
+                           &:focus {
+                              box-shadow: 0 0 0 0;
+                           }
+                        }
+                     }
+
+                     .delivery__courier {
+                        margin-bottom: 25px;
+                        display: flex;
+                        align-items: center;
+                        .form-check-input {
+                           width: 25px;
+                           height: 25px;
+                           margin-right: 12px;
+                           &:checked {
+                              background-color: $var2;
+                              border-color: $var3;
+                           }
+                           &:focus {
+                              box-shadow: 0 0 0 0;
+                           }
+                        }
+                     }
+                  }
+
+                  .payment {
+                     .payment__title {
+                        font-family: $var5;
+                        font-weight: 500;
+                        font-size: 35px;
+                        color: $var3;
+                        margin-bottom: 20px;
+                     }
+
+                     .payment__cash {
+                        margin-bottom: 25px;
+                        display: flex;
+                        align-items: center;
+                        .form-check-input {
+                           width: 25px;
+                           height: 25px;
+                           margin-right: 12px;
+                           &:checked {
+                              background-color: $var2;
+                              border-color: $var3;
+                           }
+                           &:focus {
+                              box-shadow: 0 0 0 0;
+                           }
+                        }
+                     }
+
+                     .payment__bank {
+                        margin-bottom: 25px;
+                        display: flex;
+                        align-items: center;
+                        .form-check-input {
+                           width: 25px;
+                           height: 25px;
+                           margin-right: 12px;
+                           &:checked {
+                              background-color: $var2;
+                              border-color: $var3;
+                           }
+                           &:focus {
+                              box-shadow: 0 0 0 0;
+                           }
+                        }
+                     }
+                  }
+
+                  .address {
+                     margin-bottom: 40px;
+                     .address__title {
+                        font-family: $var5;
+                        font-weight: 500;
+                        font-size: 35px;
+                        color: $var3;
+                        margin-bottom: 20px;
+                     }
+                     input[type="text"] {
+                        width: 100%;
+                        height: 54px;
+                        border: 2px solid $var3;
+                        border-radius: 12px;
+                        padding-left: 30px;
+                        font-size: 21px;
+                        line-height: 27px;
+                        color: $var3;
+                        @media screen and (max-width: 480px) {
+                           font-size: 18px;
+                        }
+                     }
+                     input[type="text"]::placeholder {
+                        font-family: $var6;
+                        font-size: 21px;
+                        line-height: 27px;
+                        color: $var3;
+                        @media screen and (max-width: 480px) {
+                           font-size: 18px;
+                        }
+                     }
+                  }
+
+                  .comment {
+                     margin-bottom: 60px;
+                     .comment__title {
+                        font-family: $var5;
+                        font-weight: 500;
+                        font-size: 35px;
+                        color: $var3;
+                        margin-bottom: 20px;
+                     }
+                     textarea {
+                        width: 100%;
+                        padding: 20px;
+                     }
+                  }
+
+                  .total__order {
+                     margin-bottom: 40px;
+                     .none {
+                        .total__delivery {
+                           font-family: $var5;
+                           font-weight: 600;
+                           font-size: 30px;
+                           line-height: 35px;
+                           color: $var3;
+                        }
+                     }
+                     p {
+                        text-align: right;
+                        .total__title {
+                           font-family: $var5;
+                           font-weight: 600;
+                           font-size: 30px;
+                           line-height: 35px;
+                           color: $var3;
+                           text-transform: uppercase;
+                        }
+
+                        .total__price {
+                           font-family: $var5;
+                           font-weight: 600;
+                           font-size: 30px;
+                           line-height: 35px;
+                           color: $var3;
+                        }
+                     }
+                  }
+
+                  .order__submit {
+                     text-align: center;
+                     button {
+                        background-color: $var2;
+                        font-family: $var5;
+                        font-weight: 600;
+                        font-size: 36px;
+                        line-height: 21px;
+                        text-transform: uppercase;
+                        color: $var1;
+                        border: none;
+                        padding: 40px 80px;
+                     }
+                  }
                }
             }
             .close__cart {

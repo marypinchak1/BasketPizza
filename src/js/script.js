@@ -77,6 +77,7 @@ closeCart.onclick = function () {
   // btnCart.style.display = "block";
 }
 // ============================================= //
+// Замовлення
 window.addEventListener('click', function (event) {
 
   //Змінна для рахунку

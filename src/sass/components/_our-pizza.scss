@@ -81,6 +81,11 @@
                justify-content: center;
                align-items: center;
                border: none;
+               border-radius: 50%;
+               transition: 0.3s;
+               &:hover {
+                  transform: scale(1.2);
+               }
             }
          }
          .card__title {
@@ -88,7 +93,6 @@
             justify-content: center;
             position: absolute;
             bottom: 5%;
-            // left: 30%;
             transform: translate(0%, 0%);
             h3 {
                font-family: $var5;
