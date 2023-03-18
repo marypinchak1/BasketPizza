@@ -1,4 +1,4 @@
-window.addEventListener('click', function (event) {
+/* window.addEventListener('click', function (event) {
    if (event.target.hasAttribute('data-cart')) {
 
       const card = event.target.closest('.pizza__card');
@@ -14,20 +14,123 @@ window.addEventListener('click', function (event) {
          counter: card.querySelector('[data-counter]').innerText,
       };
 
-      console.log(productInfo)
-
+     
    }
+
+   
+}); */
+const buyButtons = document.querySelectorAll(".buy__btn");
+const cart = [];
+
+buyButtons.forEach((button) => {
+  button.addEventListener("click", addToCart);
 });
 
-let cart = JSON.parse(localStorage.getItem("data")) || [];
+function updateCartCounter() {
+  const cartCounter = document.querySelector(".cart__counter");
+  const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
 
+  if (cartCounter !== null) {
+    cartCounter.textContent = cartItems.length;
+  }
+}
 
+function addToCart(event) {
+  const pizzaCard = event.target.closest(".pizza__card");
+  const pizzaImage = pizzaCard
+    .querySelector(".pizza__items img")
+    .getAttribute("src");
+  const pizzaId = pizzaCard.getAttribute("data-id");
+  const pizzaTitle = pizzaCard.querySelector(".card__title h3").textContent;
+  const pizzaDescription =
+    pizzaCard.querySelector(".describe__hover").textContent;
+  const pizzaPrice = pizzaCard.querySelector(".pizza__price p").textContent;
+  const pizzaWeight = pizzaCard.querySelector(".pizza__weight").textContent;
+  const pizzaSize = pizzaCard.querySelector(".pizza__size").textContent;
+  const pizzaQuantity = pizzaCard.querySelector(".items__current").textContent;
 
+  const pizza = {
+    image: pizzaImage,
+    id: pizzaId,
+    title: pizzaTitle,
+    description: pizzaDescription,
+    price: pizzaPrice,
+    weight: pizzaWeight,
+    size: pizzaSize,
+    quantity: pizzaQuantity,
+  };
 
+  cart.push(pizza);
+  localStorage.setItem("cart", JSON.stringify(cart));
 
+  updateCartCounter();
+}
 
+// add to cart
 
+const addToCartButtons = document.querySelectorAll(".buy__btn");
 
+addToCartButtons.forEach((button) => {
+  button.addEventListener("click", addToCart);
+});
+
+// show data in cart
+
+const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+const cartList = document.querySelector(".cart__list");
+
+cartItems.forEach((item) => {
+  const cartItem = document.createElement("li");
+  cartItem.classList.add("cart__item");
+  cartItem.setAttribute("data-id", item.id); // fixed line
+  cartItem.innerHTML = `
+   <div class="pizza__items">
+   <img src="${item.image}" alt="${item.title}">
+   <div class="info__top">
+      <div class="pizza__info">
+         <p class="pizza__weight">${item.weight}</p>
+         <p class="pizza__size">${item.size}</p>
+      </div>
+   </div>
+   <div class="card__title">
+      <h3>${item.title}</h3>
+   </div>
+   <div class="items__hover">
+      <h3 class="title__hover">${item.title}</h3>
+      <p class="describe__hover">${item.description}
+      </p>
+   </div>
+</div>
+   `;
+  if (cartList) {
+    cartList.appendChild(cartItem);
+  }
+});
+
+updateCartCounter();
+// remove from cart
+
+const removeButtons = document.querySelectorAll(".cart__item-remove");
+
+removeButtons.forEach((button) => {
+  button.addEventListener("click", removeFromCart);
+});
+
+function removeFromCart(event) {
+  const cartItem = event.target.closest(".cart__item");
+  const cartItemId = cartItem.getAttribute("data-id");
+
+  const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const newCartItems = cartItems.filter((item) => item.id !== cartItemId);
+
+  localStorage.setItem("cart", JSON.stringify(newCartItems));
+
+  cartItem.remove();
+
+  updateCartCounter();
+}
 
 
 
@@ -35,9 +138,9 @@ let cart = JSON.parse(localStorage.getItem("data")) || [];
 
 // Form JS Code //
 // Validation Form-Phone //
-let element = document.getElementById('phone');
+let element = document.getElementById("phone");
 let maskOptions = {
-   mask: '+38 (000) 00-00-000',
-   lazy: false,
+  mask: "+38 (000) 00-00-000",
+  lazy: false,
 };
 let mask = IMask(element, maskOptions);
