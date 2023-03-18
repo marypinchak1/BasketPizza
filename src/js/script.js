@@ -29,7 +29,7 @@ let swiper = new Swiper(".mySwiper", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
-  loop: true,
+  loop: false,
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
