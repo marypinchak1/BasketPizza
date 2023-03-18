@@ -19,6 +19,12 @@ window.addEventListener('click', function (event) {
    }
 });
 
+let cart = JSON.parse(localStorage.getItem("data")) || [];
+
+
+
+
+
 
 
 
