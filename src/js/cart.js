@@ -66,49 +66,71 @@ function addToCart(event) {
   updateCartCounter();
 }
 
-// add to cart
+window.addEventListener("click", function (event) {
+  if (event.target.hasAttribute("data-cart")) {
+    const addToCartButtons = document.querySelectorAll(".buy__btn");
 
-const addToCartButtons = document.querySelectorAll(".buy__btn");
+    // add to cart
 
-addToCartButtons.forEach((button) => {
-  button.addEventListener("click", addToCart);
-});
+    addToCartButtons.forEach((button) => {
+      button.addEventListener("click", addToCart);
+    });
 
-// show data in cart
+    // show data in cart
 
-const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
 
-const cartList = document.querySelector(".cart__list");
+    const cartList = document.querySelector(".cart__list");
 
-cartItems.forEach((item) => {
-  const cartItem = document.createElement("li");
-  cartItem.classList.add("cart__item");
-  cartItem.setAttribute("data-id", item.id); // fixed line
-  cartItem.innerHTML = `
-   <div class="pizza__items">
-   <img src="${item.image}" alt="${item.title}">
-   <div class="info__top">
-      <div class="pizza__info">
-         <p class="pizza__weight">${item.weight}</p>
-         <p class="pizza__size">${item.size}</p>
+    cartItems.forEach((item) => {
+      const cartItem = document.createElement("li");
+      cartItem.classList.add("cart__item");
+      cartItem.setAttribute("data-id", item.id); // fixed line
+      cartItem.innerHTML = `
+  <div class="pizza__body_cart">
+    <div class="pizza__card">
+      <div class="pizza__items">
+        <img src="${item.image}" alt="${item.title}">
+          <div class="info__top">
+            <div class="pizza__info">
+              <p class="pizza__weight">${item.weight}</p>
+              <p class="pizza__size">${item.size}</p>
+            </div>
+          </div>
+          <div class="card__title">
+            <h3>${item.title}</h3>
+          </div>
+          <div class="items__hover">
+            <h3 class="title__hover">${item.title}</h3>
+            <p class="describe__hover">${item.description}
+            </p>
+          </div>
+        </div>
+        <div class="pizza__buy">
+          <div class="pizza__counter">
+            <div class="items__control" data-action="minus">
+            -
+            </div>
+            <div class="items__current" data-counter>1</div>
+            <div class="items__control" data-action="plus">+</div>
+          </div>
+          <div class="pizza__price">
+            <p>265 грн</p>
+          </div>
+        </div>
       </div>
-   </div>
-   <div class="card__title">
-      <h3>${item.title}</h3>
-   </div>
-   <div class="items__hover">
-      <h3 class="title__hover">${item.title}</h3>
-      <p class="describe__hover">${item.description}
-      </p>
-   </div>
-</div>
+    </div>
+  </div>
    `;
-  if (cartList) {
-    cartList.appendChild(cartItem);
+      if (cartList) {
+        cartList.appendChild(cartItem);
+      }
+    });
+
+    updateCartCounter();
   }
 });
 
-updateCartCounter();
 // remove from cart
 
 const removeButtons = document.querySelectorAll(".cart__item-remove");
@@ -131,10 +153,6 @@ function removeFromCart(event) {
 
   updateCartCounter();
 }
-
-
-
-
 
 // Form JS Code //
 // Validation Form-Phone //
