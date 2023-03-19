@@ -43,7 +43,7 @@ function addToCart(event) {
   const pizzaId = pizzaCard.getAttribute("data-id");
   const pizzaTitle = pizzaCard.querySelector(".card__title h3").textContent;
   const pizzaDescription =
-    pizzaCard.querySelector(".describe__hover").textContent;
+  pizzaCard.querySelector(".describe__hover").textContent;
   const pizzaPrice = pizzaCard.querySelector(".pizza__price p").textContent;
   const pizzaWeight = pizzaCard.querySelector(".pizza__weight").textContent;
   const pizzaSize = pizzaCard.querySelector(".pizza__size").textContent;
@@ -57,7 +57,7 @@ function addToCart(event) {
     price: pizzaPrice,
     weight: pizzaWeight,
     size: pizzaSize,
-    quantity: pizzaQuantity,
+    quantity: pizzaQuantity, 
   };
 
   cart.push(pizza);
